@@ -1,0 +1,12 @@
+server:
+  port: ${SERVER_PORT:8082}
+spring:
+  application:
+    name: plato-service
+  profiles:
+    default: dev
+  datasource:
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:}
+  jpa:
+    open-in-view: false

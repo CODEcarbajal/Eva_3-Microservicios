@@ -1,0 +1,12 @@
+server:
+  port: ${SERVER_PORT:8083}
+spring:
+  application:
+    name: pedido-service
+  profiles:
+    default: dev
+  datasource:
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:}
+  jpa:
+    open-in-view: false

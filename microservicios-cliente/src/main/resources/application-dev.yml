@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3306/bd_cliente_restaurante}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+empresa:
+  ambiente: desarrollo
